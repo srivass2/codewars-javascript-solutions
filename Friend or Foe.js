@@ -8,12 +8,19 @@ Output = ["Ryan", "Yous"]
 
 */
 
-const arr = ["Ryan", "Kieran", "Jason", "Yous", "1234"];
+//const arr = ["Ryan", "Kieran", "Jason", "Yous", "1234"];
+const arr=[
+    'Tim',  'Alex',
+    'Kyle', 'Dick',
+    'Omar', 'Bart',
+    'Lisa'
+  ]
+
 function friend(friends){
     //your code here
     //let newArr = []
     
-        const newArr = friends.filter((val) => isNaN(val)).filter((val) => val.length <=4);
+        const newArr = friends.filter((val) => isNaN(val)).filter((val) => val.length ==4);
         
     console.log(newArr);
     return newArr;
